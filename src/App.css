@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+:root {
+  --yellow: #f5c32c; 
+  --orange: #fca61f;
+  --black: #242d49;
+  --nayeon: #49c0ec;
+  --jeongyeon: #a3cc54;
+  --momo: #e67ea3;
+  --sana: #8c79b4;
+  --jihyo: #f9cc85;
+  --mina:#71c7d4;
+  --dahyun: #fefefe;
+  --chaeyeong: #e62722;
+  --tzuyu : #2253a3;
+  --apricote: #f9c596;
+  --neon_magneta:#fc5d9d;
+  --gray: rgba(36, 45, 73, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+--shedule: #E1AE4A;
+}
+.App{
+  overflow: auto;
+  color: var(--black);
+  background-color: #f9c596; 
+  padding: 1rem 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blur{
+  position: absolute;
+  width:22rem;
+  height: 17rem;
+  border-radius: 100%;
+  background:  #fc5d9d;
+  filter: blur(8.6rem);
+  /* filter: opacity(10%); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--tzuyu);
+  transition: all 100ms ease-in;
+  text-transform: capitalize;
+  font-family: 'Mukta', sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover{
+  cursor: pointer;
+  color: var(--tzuyu);
+  background:#fefefe1e;
+  font-weight: bolder;
+  /* font-family: 'Genos', sans-serif; */
+  text-transform: capitalize;
+  border: 2px solid var(--tzuyu);
+   
 }
